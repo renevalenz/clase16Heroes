@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar heroe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles-form.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Descuento 20%</h2>
+        </div>
+        <div class="logo-bar">
+            <img src="img/DC.png" alt="dc-logo">
+            <h1><a href="index.html">Heroes</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container">
+            <div class="titulo">
+                <h1>Añade tu Heroe!</h1>
+                <h4>Agregá tu personaje favorito completando las opciones.</h4>
+            </div>
+
+            <form action="#" class="form" method="post">
+                <div class="input-col">
+                    <div>
+                        <div class="input-box">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Nombre del Heroe" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                        <div class="input-box">
+                            <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="input-box">
+                            <label for="especie">Especie</label>
+                            <select name="especie" id="especie" required>
+                                <option value="" disabled selected>Especie</option>
+                                <option value="superpoderes">Superpoderes</option>
+                                <option value="mutantes">Mutantes</option>
+                                <option value="alienigenas">Alienigenas</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="imagen">Agregar Foto</label>
+                            <input type="file" name="imagen" id="imagen">
+                        </div>
+
+                        <div class="input-check">
+                            <label for="poderes">Poderes</label>
+                            <label for="Volar">
+                                <input type="checkbox" name="poderes" id="Volar" value="Volar" />
+                                Volar
+                            </label>
+                            <label for="superInteligencia">
+                                <input type="checkbox" name="poderes" id="superInteligencia"
+                                    value="superInteligencia" />
+                                SuperInteligencia
+                            </label>
+                            <label for="rayoLaser">
+                                <input type="checkbox" name="poderes" id="rayoLaser" value="rayoLaser" />
+                                Vista de rayo láser
+                            </label>
+                            <label for="billetera">
+                                <input type="checkbox" name="poderes" id="billetera" value="billetera" />
+                                Billetera gorda
+                            </label>
+
+                            <hr>
+                            <div class="input-box">
+                                <label for="personaje" class="top-label">Tipo de personaje</label>
+
+
+                                <div>
+                                    <input type="radio" id="heores" name="drone" value="heroes" checked>
+                                    <label for="heroes">Héroe / Heroina</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="villanos" name="drone" value="villanos">
+                                    <label for="villanos"> Villano / Villana</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" class="submit-btn" value="Añadir">
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <h3>Todos los derechos reservados a FRONT END 1</h3>
+            <img src="img/logo-github.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

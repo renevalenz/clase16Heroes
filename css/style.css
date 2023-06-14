@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ///////////////////////// Header ////////////////////// */
+
+header h2 {
+    position: static;
+    background-color: #1CD1B0;
+    margin: 0;
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.logo-bar {
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    padding-left: 30px;
+
+
+}
+
+header img {
+    width: 5vw;
+    height: 10vh;
+}
+
+header h1 {
+
+
+    font-weight: 400;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #001D2D;
+
+}
+
+ul {
+    padding: 10px 30px;
+    color: white;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+/* ///////////////////////// Main /////////////////// */
+
+main h2,
+main p {
+
+    margin: 0
+}
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 580px;
+    text-align: center;
+    padding: 20px;
+    background-image: url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    scale: 110%;
+    transition: 300ms;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.heroe,
+p,
+h2 {
+
+    position: relative;
+    top: 110px;
+    margin: 15px;
+    padding: 0 10px;
+}
+
+.heroe {
+    border-radius: 50%;
+    width: 40%;
+}
+
+main p {
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+
+.btncard {
+
+    margin: auto;
+    width: 40%;
+    background-color: #00669F;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+
+
+
+}
+
+.like {
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card2 {
+    background-image: url(../img/fondowonder.png)
+}
+
+.card3 {
+    background-image: url(../img/fondo-super.png)
+}
+
+.card4 {
+    background-image: url(../img/fondo2.png)
+}
+
+.flotante {
+
+    background-color: #00669F;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: 400px;
+
+}
+
+.flotante:hover {
+    background-color: #001D2D;
+    scale: 120%;
+    transition: 400ms;
+}
+
+
+/* /////////////////////// Footer //////////////////// */
+.footer-container {
+    align-items: center;
+    background-color: #00669F;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    flex-grow: 1;
+}
+
+footer img {
+    max-width: 5%;
+}
+
+
+
+
+
+/* ///////////Media///////////// */
+
+
+
+@media (max-width: 1058px) {
+
+
+
+    footer img {
+        max-width: 10%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card4 {
+        display: none;
+    }
+
+
+    footer h3 {
+
+        font-size: .8rem;
+    }
+}
